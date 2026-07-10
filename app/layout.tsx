@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import StructuredData from "@/components/StructuredData";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://lunecia.yukihirai.in"),
@@ -71,6 +72,8 @@ export default function RootLayout({
           <body>
             <StructuredData />
             {children}
+            
+            <GoogleAnalytics gaId="G-2WK339V055" />
           </body>
         </html>
       </body>
