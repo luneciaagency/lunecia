@@ -6,6 +6,7 @@ import Portfolio from "@/components/home/Portfolio";
 import Contact from "@/components/Contact";
 import CTA from "@/components/home/CTA";
 import Footer from "@/components/layout/Footer";
+import PricingSection from "@/components/services/PricingSection";
 
 export default function Home() {
   return (
