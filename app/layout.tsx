@@ -5,6 +5,10 @@ import StructuredData from "@/components/StructuredData";
 export const metadata: Metadata = {
   metadataBase: new URL("https://lunecia.yukihirai.in"),
 
+  verification: {
+    google: "TmiFmTvQaOOsd4OL28HVWpOccShvC5hRtRx67PBbqi4",
+  },
+
   title: {
     default: "Lunecia | AI Automation, Websites & SEO Agency",
     template: "%s | Lunecia",
