@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import StructuredData from "@/components/StructuredData";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import ClarityProvider from "@/components/Clarity";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://lunecia.yukihirai.in"),
@@ -62,20 +63,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body>
-        <html lang="en">
-          <body>
-            <StructuredData />
-            {children}
-            
-            <GoogleAnalytics gaId="G-2WK339V055" />
-          </body>
-        </html>
+        <StructuredData />
+
+        <ClarityProvider />
+
+        {children}
+
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
       </body>
     </html>
   );
