@@ -24,7 +24,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center" onClick={() => setMenuOpen(false)}>
             <Image
-              src="/logo/lunecia-logo.svg"
+              src="/logo/lunecia-logo.jpg"
               alt="Lunecia"
               width={190}
               height={50}
